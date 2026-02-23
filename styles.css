@@ -1,44 +1,105 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    overflow-y: scroll;
-    background: linear-gradient(180deg, #0F1419 50%, #F8FAFB 50%);
+/* ===== Crediva Design System ===== */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Inter:wght@400;500&display=swap');
+
+:root {
+  --primary: #1A56DB;
+  --secondary: #EEF2FF;
+  --accent: #CBD5E1;
+  --bg: #FFFFFF;
+  --glass: rgba(255,255,255,0.75);
+  --text: #0F172A;
 }
 
-.header {
-    background: rgba(255, 107, 107, 0.8);
-    backdrop-filter: blur(10px);
-    padding: 20px;
-    text-align: center;
-    color: #F8FAFB;
+* {
+  box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background: linear-gradient(180deg, #f8faff, var(--secondary));
+  color: var(--text);
+}
+
+/* ===== HERO ===== */
+.hero {
+  padding: 120px 20px 80px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-family: Outfit, sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 16px auto 0;
+  font-size: 1.1rem;
+  color: #334155;
+}
+
+/* ===== GLASS CARD ===== */
+.glass-card {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 32px;
+  background: var(--glass);
+  backdrop-filter: blur(20px);
+  border-radius: 24px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.08);
+}
+
+/* ===== INPUTS ===== */
+label {
+  display: block;
+  margin-top: 20px;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #64748B;
+}
+
+input, select {
+  width: 100%;
+  height: 52px;
+  margin-top: 8px;
+  padding: 0 18px;
+  border-radius: 999px;
+  border: 1px solid var(--accent);
+  font-size: 1rem;
+  outline: none;
+}
+
+/* ===== BUTTON ===== */
+button {
+  margin-top: 28px;
+  width: 100%;
+  height: 56px;
+  border-radius: 999px;
+  border: none;
+  background: var(--primary);
+  color: white;
+  font-size: 1.05rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 12px 30px rgba(26,86,219,0.35);
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+/* ===== SECTIONS ===== */
 .section {
-    padding: 40px;
-    margin: 20px;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(15px);
-    border-radius: 15px;
+  max-width: 1000px;
+  margin: 100px auto;
+  padding: 0 20px;
 }
 
-.button {
-    background: linear-gradient(90deg, #00D9FF, #FF6B6B);
-    border: none;
-    color: white;
-    padding: 15px 30px;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
-}
-
-.button:hover {
-    transform: scale(1.05);
-}
-
-.footer {
-    margin-top: auto;
-    padding: 20px;
-    background: rgba(15, 20, 25, 0.8);
-    color: #F8FAFB;
+.section h2 {
+  font-family: Outfit, sans-serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
