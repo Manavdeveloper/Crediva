@@ -1,0 +1,15 @@
+title: Crediva
+
+description: A website dedicated to Crediva.
+
+theme: jekyll-theme-minimal
+
+url: "https://crediva.example.com"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  
+exclude:
+  - "Gemfile"
+  - "Gemfile.lock"
