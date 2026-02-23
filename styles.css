@@ -103,3 +103,16 @@ button:hover {
   font-size: 2rem;
   margin-bottom: 20px;
 }
+.dark-section {
+  background: #0B1220;
+  color: #E5E7EB;
+  padding: 120px 20px;
+}
+
+.dark-section h2 {
+  color: #FFFFFF;
+}
+
+.dark-section p {
+  color: #9CA3AF;
+}
