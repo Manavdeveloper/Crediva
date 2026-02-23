@@ -15,31 +15,28 @@
         </section>
 
     <div class="glass-card">
-  <form
+ <form
+  id="waitlist-form"
   action="https://formspree.io/f/mvzbvbog"
   method="POST"
 >
 
   <label>Email</label>
-  <input
-    type="email"
-    name="email"
-    placeholder="Enter your email"
-    required
-  />
+  <input type="email" name="email" required>
 
   <label>Role</label>
   <select name="role" required>
     <option value="">Select role</option>
-    <option value="creator">Creator</option>
-    <option value="brand">Brand</option>
+    <option value="Creator">Creator</option>
+    <option value="Brand">Brand</option>
   </select>
 
-  <button type="submit">
-    Join Early Access
-  </button>
-
+  <button type="submit">Join Early Access</button>
 </form>
+
+<p id="success-message" style="display:none; font-size:1.1rem; margin-top:24px;">
+  ✅ <strong>We will reach out to you once the website is live!</strong>
+</p>
 </div>
   </div>
     </div>
