@@ -32,8 +32,26 @@
   action="https://formspree.io/f/mvzbvbog"
   method="POST"
 >
-  <input type="email" name="email" placeholder="Email" required />
-  <button type="submit">Submit</button>
+
+  <label>Email</label>
+  <input
+    type="email"
+    name="email"
+    placeholder="Enter your email"
+    required
+  />
+
+  <label>Role</label>
+  <select name="role" required>
+    <option value="">Select role</option>
+    <option value="creator">Creator</option>
+    <option value="brand">Brand</option>
+  </select>
+
+  <button type="submit">
+    Join Early Access
+  </button>
+
 </form>
 </div>
   </div>
