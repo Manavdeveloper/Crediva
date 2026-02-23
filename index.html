@@ -3,57 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crediva Landing Page</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to an external CSS file -->
+    <title>Crediva - Your Financial Hub</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS for styling -->
 </head>
 <body>
-    <!-- Hero Section -->
-    <header class="hero">
+    <nav>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#waitlist">Join Waitlist</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <header id="hero">
         <h1>Welcome to Crediva</h1>
-        <p>Your brand's journey to success starts here.</p>
-        <a href="#waitlist" class="btn">Join the Waitlist</a>
+        <p>Your all-in-one financial services dashboard.</p>
+        <a href="#waitlist" class="cta-button">Join our Waitlist</a>
     </header>
 
-    <!-- Features Section -->
-    <section class="features">
+    <section id="features">
         <h2>Features</h2>
-        <div class="feature-item">
-            <h3>Creator Dashboard</h3>
-            <p>Manage your projects and performance.</p>
-        </div>
-        <div class="feature-item">
-            <h3>Brand Dashboard</h3>
-            <p>Insights and analytics for your brand.</p>
-        </div>
+        <div class="feature-item">Feature 1 Description</div>
+        <div class="feature-item">Feature 2 Description</div>
+        <div class="feature-item">Feature 3 Description</div>
     </section>
 
-    <!-- Creator Dashboard Preview -->
-    <section class="creator-preview">
-        <h2>Creator Dashboard Preview</h2>
-        <img src="creator-dashboard-preview.png" alt="Creator Dashboard Preview">
+    <section id="dashboard">
+        <h2>Dashboard Previews</h2>
+        <p>Preview of the dashboard functionalities.</p>
+        <!-- Assume there are images or screenshots of the dashboard -->
     </section>
 
-    <!-- Brand Dashboard Preview -->
-    <section class="brand-preview">
-        <h2>Brand Dashboard Preview</h2>
-        <img src="brand-dashboard-preview.png" alt="Brand Dashboard Preview">
-    </section>
-
-    <!-- Waitlist Signup -->
-    <section id="waitlist" class="waitlist">
-        <h2>Join the Waitlist</h2>
+    <section id="login">
+        <h2>Login to Your Account</h2>
         <form>
-            <input type="email" placeholder="Enter your email" required>
-            <button type="submit" class="btn">Sign Up</button>
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
         </form>
     </section>
 
-    <!-- Social Media Shortcuts -->
-    <footer class="social-media">
-        <h2>Follow us</h2>
-        <a href="https://twitter.com/Crediva">Twitter</a>
-        <a href="https://facebook.com/Crediva">Facebook</a>
-        <a href="https://instagram.com/Crediva">Instagram</a>
+    <section id="waitlist">
+        <h2>Join Our Waitlist</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <button type="submit">Join Waitlist</button>
+        </form>
+    </section>
+
+    <footer>
+        <h2>Follow Us</h2>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+        <p>&copy; 2026 Crediva. All rights reserved.</p>
     </footer>
 </body>
 </html>
