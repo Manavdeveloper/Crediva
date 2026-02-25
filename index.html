@@ -105,15 +105,24 @@
     <h2>Join Early Access</h2>
     <p>We’ll reach out once the platform goes live.</p>
 
-  <form
-  action="https://formspree.io/f/mvzbvbog"
-  method="POST"
->
-  <input type="hidden" name="source" value="crediva-waitlist">
-  <input type="email" name="email" placeholder="Enter your email" required>
+  <form id="waitlistForm">
+  <input type="email" id="email" placeholder="Your email" required>
   <button type="submit">Join Waitlist</button>
-  </form>
-  </section>
+</form>
+
+<script>
+document.getElementById("waitlistForm").addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  await fetch("https://formspree.io/f/XXXXYYYY", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ email: email.value })
+  });
+
+  window.location.href = "thank-you.html";
+});
+</script>
 
   <!-- ================= FOOTER ================= -->
   <footer class="section">
