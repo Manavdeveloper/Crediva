@@ -105,11 +105,14 @@
     <h2>Join Early Access</h2>
     <p>We’ll reach out once the platform goes live.</p>
 
-    <!-- Replace YOUR_FORM_ID with your Formspree ID -->
-    <form action="https://formspree.io/f/mvzbvbog" method="POST">
-      <input type="email" name="email" placeholder="Enter your email" required />
-      <button type="submit">Join Waitlist</button>
-    </form>
+  <form
+  action="https://formspree.io/f/mvzbvbog"
+  method="POST"
+>
+  <input type="hidden" name="_redirect" value="thank-you.html">
+  <input type="email" name="email" placeholder="Enter your email" required>
+  <button type="submit">Join Waitlist</button>
+  </form>
   </section>
 
   <!-- ================= FOOTER ================= -->
