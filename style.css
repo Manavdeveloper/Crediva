@@ -129,7 +129,13 @@ button {
   transition: all 0.25s ease;
   box-shadow: 0 14px 40px rgba(59, 130, 246, 0.45);
 }
-
+/* Hero button override */
+.hero button {
+  width: 180px;
+  height: 44px;
+  font-size: 0.95rem;
+  margin-top: 24px;
+}
 button:hover {
   transform: translateY(-2px);
   box-shadow: 0 18px 55px rgba(59, 130, 246, 0.65);
