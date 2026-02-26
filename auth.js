@@ -5,12 +5,14 @@ import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/12
 
 // 🔥 Your config
 const firebaseConfig = {
+ const firebaseConfig = {
   apiKey: "AIzaSyAbQw2Uzbclo9uZK7Bieafon9H8Efq4-lw",
   authDomain: "crediva-1645e.firebaseapp.com",
   projectId: "crediva-1645e",
   storageBucket: "crediva-1645e.firebasestorage.app",
   messagingSenderId: "1099297853420",
   appId: "1:1099297853420:web:2abd528f9c40315acdfac9"
+};
 };
 
 // Initialize Firebase
