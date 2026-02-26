@@ -21,7 +21,27 @@
     </p>
     <a href="#waitlist">
       <button>Join the Waitlist</button>
-    </a>
+    
+  </a>
+  <section class="hero glass-card">
+  <h1>Get Paid in Weeks, Not Months</h1>
+  <p>The financial OS for professional creators. Stop waiting 90 days for brand payouts.</p>
+
+  <label>Email</label>
+  <input type="email" id="email" placeholder="you@example.com" />
+
+  <label>Password</label>
+  <input type="password" id="password" placeholder="••••••••" />
+
+  <label>Role</label>
+  <select id="role">
+    <option value="creator">Creator</option>
+    <option value="brand">Brand</option>
+  </select>
+
+  <button id="signupBtn">Sign Up</button>
+  <button id="loginBtn" style="margin-top:12px;">Login</button>
+</section>
   </section>
 
   <!-- ================= PROBLEM ================= -->
@@ -128,6 +148,6 @@ document.getElementById("waitlistForm").addEventListener("submit", async (e) => 
   <footer class="section">
     <p>© 2026 Crediva. Payments. Trust. Speed.</p>
   </footer>
-
+<script type="module" src="auth.js"></script>
 </body>
 </html>
